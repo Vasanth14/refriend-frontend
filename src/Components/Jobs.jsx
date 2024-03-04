@@ -151,7 +151,7 @@ const Jobs = () => {
                             role="list"
                             className="divide-y divide-gray-100 rounded-md border border-gray-200"
                           >
-                            {jobDetail.contactLink.map((link, index) => (
+                            {jobDetail.contactLinks.map((link, index) => (
                               <li
                                 key={index}
                                 className="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
