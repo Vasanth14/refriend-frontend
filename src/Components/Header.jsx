@@ -44,9 +44,14 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between border-b-[1px] border-slate p-5">
       <Link to="/" className="font-bold text-2xl">
-        ReFriend
+        <span className="bg-blue-600 text-white">Re</span>Friend
       </Link>
       <div className="flex gap-3 items-center ">
+    <Link to='/jobs'>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          New
+        </button>
+    </Link>
         <p className="font-semibold">Hello, {!isLoading && userName}</p>
         <div className="relative">
           <span

@@ -6,6 +6,7 @@ import Signin from "./Components/Signin";
 import Signup from "./Components/Signup";
 import { Toaster } from "react-hot-toast";
 import Jobs from "./Components/Jobs";
+import Publish from "./Components/Publish";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             }
           />
           <Route path="/jobs/:id" element={<Jobs />} />
+          <Route path="/jobs" element={<Publish />} />
           <Route element={<PrivateRoute />}>
             <Route path="/" Component={Dashboard} />
           </Route>
