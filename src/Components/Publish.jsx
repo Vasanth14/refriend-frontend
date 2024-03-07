@@ -314,7 +314,7 @@ const Publish = () => {
                             </div>
                           ))}
                           <button
-                            className="mt-2 bg-indigo-500 text-white py-1 px-3 rounded hover:bg-indigo-600"
+                            className="mt-2 bg-[#1f2937] hover:bg-blue-700 text-white py-1 px-3 rounded"
                             onClick={handleAddSkills}
                           >
                             Add Skill
@@ -350,7 +350,7 @@ const Publish = () => {
                             </div>
                           ))}
                           <button
-                            className="mt-2 bg-indigo-500 text-white py-1 px-3 rounded hover:bg-indigo-600"
+                            className="mt-2 bg-[#1f2937] hover:bg-blue-700 text-white py-1 px-3 rounded"
                             onClick={handleAddContacts}
                           >
                             Add Contact Link
@@ -370,7 +370,7 @@ const Publish = () => {
                   </button>
                   <button
                     type="submit"
-                    className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-[#1f2937] hover:bg-blue-700 px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Save
                   </button>

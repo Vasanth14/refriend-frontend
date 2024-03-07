@@ -42,13 +42,13 @@ const Header = () => {
   }, [user?.id]);
 
   return (
-    <header className="flex items-center justify-between border-b-[1px] border-slate p-5">
+    <header className="flex items-center justify-between border-b-[1px] border-slate p-5 sticky top-0 bg-white z-50">
       <Link to="/" className="font-bold text-2xl">
-        <span className="bg-blue-600 text-white">Re</span>Friend
+        <span className="bg-[#1f2937] text-white">Re</span>Friend
       </Link>
       <div className="flex gap-3 items-center ">
     <Link to='/jobs'>
-    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+    <button class="bg-[#1f2937] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
           New
         </button>
     </Link>
