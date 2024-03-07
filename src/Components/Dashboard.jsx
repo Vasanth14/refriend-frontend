@@ -45,6 +45,7 @@ const Dashboard = () => {
   return (
     <div className="h-full bg-white text-black">
       <Header />
+
       {/* <header className="flex items-center justify-between border-b-[1px] border-slate p-5">
         <h1 className="font-bold text-2xl">ReFriend</h1>
         <div className="flex gap-3 items-center ">
@@ -68,14 +69,15 @@ const Dashboard = () => {
             ) : (
               jobs.map((job) => (
                 <Link to={`/jobs/${job.id}`} key={job.id}>
-                  <div className="p-4 my-5 border rounded border-slate-400 pb-4 w-screen max-w-screen-md cursor-pointer">
+                  <div className="flex justify-center my-5">
+                  <div class="w-full sm:w-3/4 md:w-1/2 lg:w-2/3 xl:w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="flex items-center">
                       <div className="relative inline-flex items-center justify-center overflow-hidden bg-gray-600 rounded-full w-6 h-6">
                         <span className="text-xs font-extralight text-gray-600 dark:text-gray-300">
                           {job.postedBy.name.charAt(0).toLowerCase()}
                         </span>
                       </div>
-                      <div className="font-extralight pl-2 text-sm flex justify-center flex-col">
+                      <div className="font-extralight text-white pl-2 text-sm flex justify-center flex-col my-3">
                         {job.postedBy.name}
                       </div>
                       <div className="flex justify-center flex-col pl-2">
@@ -85,10 +87,17 @@ const Dashboard = () => {
                         {new Date(job.postedAt).toLocaleDateString()}
                       </div>
                     </div>
-                    <div className="text-xl font-semibold pt-2">
-                      {job.title}
+                      <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{job.title}</h5>
+                      </a>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{job.description}</p>
+                      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                      </a>
                     </div>
-                    <div className="text-md font-thin">{job.description}</div>
                   </div>
                 </Link>
               ))
